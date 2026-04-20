@@ -28,7 +28,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 
 
-DATA_PATH = Path(__file__).resolve().parent / "data" / "ml_paradigm_dataset.csv"
+DATA_PATH = Path(__file__).resolve().parent / "ml_paradigm_dataset.csv"
 RANDOM_STATE = 42
 
 
