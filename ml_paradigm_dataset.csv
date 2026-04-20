@@ -1,46 +1,541 @@
 text,label
-"Predict customer churn using previous purchase and support history",supervised
-"Classify emails as spam or not spam",supervised
-"Forecast monthly sales from historical revenue data",supervised
-"Estimate house prices from size location and number of rooms",supervised
-"Predict whether a loan applicant will default",supervised
-"Classify product reviews as positive neutral or negative",supervised
-"Detect fraudulent credit card transactions using labeled examples",supervised
-"Predict delivery time from distance traffic and weather data",supervised
-"Classify medical images as healthy or diseased",supervised
-"Estimate employee attrition from HR records",supervised
-"Predict demand for a new product based on past orders",supervised
-"Classify support tickets into billing technical or account categories",supervised
-"Predict insurance claim amount from customer profile data",supervised
-"Identify whether a customer will click an advertisement",supervised
-"Forecast machine failure using sensor readings and past labels",supervised
+"Predict customer churn using account history and support tickets",supervised
+"Predict monthly sales from past orders and seasonal demand",supervised
+"Predict whether a loan applicant will default next year",supervised
+"Predict delivery delays using route distance and traffic history",supervised
+"Predict product return risk from customer and purchase data",supervised
+"Predict employee attrition using salary tenure and survey scores",supervised
+"Predict insurance claim cost from policy and customer details",supervised
+"Predict hotel booking cancellation from reservation behavior",supervised
+"Predict machine failure using labeled sensor readings",supervised
+"Predict whether a website visitor will buy a product",supervised
+"Predict customer lifetime value from transaction history",supervised
+"Predict patient readmission risk using medical records",supervised
+"Predict subscription renewal from usage and payment data",supervised
+"Predict credit score category from financial profile data",supervised
+"Predict next month demand for each store item",supervised
+"Predict customer response to a marketing campaign",supervised
+"Predict house prices using size location and room count",supervised
+"Predict taxi fare from pickup location distance and time",supervised
+"Predict energy consumption using weather and building data",supervised
+"Predict crop yield from rainfall soil and fertilizer records",supervised
+"Predict invoice payment delay using customer payment history",supervised
+"Predict whether a transaction is fraudulent from labeled records",supervised
+"Predict app user churn from login and feature usage logs",supervised
+"Predict call center wait time from queue and staffing data",supervised
+"Predict restaurant daily revenue from past sales and holidays",supervised
+"Predict stockout risk using inventory and sales history",supervised
+"Predict repair cost from vehicle age mileage and issue type",supervised
+"Predict course completion from student activity data",supervised
+"Predict customer satisfaction score from service interactions",supervised
+"Predict warranty claim probability using product usage data",supervised
+"Predict demand for ride sharing trips by area and hour",supervised
+"Predict medical diagnosis category from labeled symptoms",supervised
+"Predict whether a lead will convert into a paying customer",supervised
+"Predict loan approval status from applicant financial data",supervised
+"Predict shipping cost from package size weight and destination",supervised
+"Predict employee performance rating from past evaluation data",supervised
+"Predict refund request likelihood from order and complaint history",supervised
+"Predict equipment downtime from maintenance and sensor records",supervised
+"Predict electricity bill amount from usage and weather features",supervised
+"Predict student exam pass or fail using attendance and marks",supervised
+"Predict sales opportunity value from CRM pipeline data",supervised
+"Predict customer risk level for a banking product",supervised
+"Predict hospital appointment no show from patient history",supervised
+"Predict demand for spare parts using historical service data",supervised
+"Predict customer upgrade likelihood from subscription behavior",supervised
+"Predict whether a claim is valid using labeled claim examples",supervised
+"Predict product rating from review text and customer profile",supervised
+"Predict branch revenue from location staffing and past sales",supervised
+"Predict supplier late delivery using previous shipment records",supervised
+"Predict food delivery preparation time from order data",supervised
+"Classify emails as spam promotional or important",supervised
+"Classify customer reviews as positive neutral or negative",supervised
+"Classify support tickets into billing technical or account issues",supervised
+"Classify medical images as normal benign or abnormal",supervised
+"Classify bank transactions as legitimate or suspicious",supervised
+"Classify product images into catalog categories",supervised
+"Classify resumes into job role categories using labeled examples",supervised
+"Classify insurance claims by severity level",supervised
+"Classify social media comments by sentiment",supervised
+"Classify documents as contracts invoices or reports",supervised
+"Classify leads as hot warm or cold based on CRM data",supervised
+"Classify app feedback into bug request or praise categories",supervised
+"Classify loan applications into low medium or high risk",supervised
+"Classify news articles by business topic",supervised
+"Classify voice calls as complaint inquiry or cancellation",supervised
+"Classify retail customers as likely buyer or unlikely buyer",supervised
+"Classify manufactured parts as pass or fail from inspection data",supervised
+"Classify job applications as shortlisted or rejected",supervised
+"Classify traffic signs from labeled road images",supervised
+"Classify expense reports by department category",supervised
+"Classify product defects from labeled factory photos",supervised
+"Classify chatbot messages by user intent",supervised
+"Classify mortgage applications by approval status",supervised
+"Classify customer emails by urgency level",supervised
+"Classify survey responses into satisfaction categories",supervised
+"Classify invoices as paid overdue or disputed",supervised
+"Classify website sessions as browsing comparing or purchasing",supervised
+"Classify restaurant reviews by star rating group",supervised
+"Classify patients into disease risk categories using labels",supervised
+"Classify product descriptions into existing catalog classes",supervised
+"Forecast weekly demand for grocery items using past sales",supervised
+"Forecast daily cash withdrawals at each ATM branch",supervised
+"Forecast airport passenger volume from previous travel records",supervised
+"Forecast call volume using historical support center logs",supervised
+"Forecast monthly revenue from subscription billing history",supervised
+"Forecast power load from past consumption and temperature",supervised
+"Forecast store footfall using calendar and promotion data",supervised
+"Forecast raw material demand based on production history",supervised
+"Forecast fuel usage for a delivery fleet",supervised
+"Forecast hospital bed occupancy from admission history",supervised
+"Forecast ecommerce order volume during festival sales",supervised
+"Forecast staffing needs from past workload and shift data",supervised
+"Forecast ticket resolution time from labeled service records",supervised
+"Forecast weekly website traffic from historical analytics",supervised
+"Forecast warehouse picking workload from order history",supervised
+"Estimate car resale price from model age and mileage",supervised
+"Estimate customer income band from verified profile data",supervised
+"Estimate apartment rent using location area and amenities",supervised
+"Estimate project completion time from previous project data",supervised
+"Estimate claim settlement amount from labeled past claims",supervised
+"Estimate delivery arrival time using historical delivery labels",supervised
+"Estimate crop disease severity from labeled leaf images",supervised
+"Estimate ad click probability from campaign history",supervised
+"Estimate tax audit risk using labeled taxpayer records",supervised
+"Estimate hotel room price using booking and location data",supervised
+"Detect fraudulent payments using past confirmed fraud cases",supervised
+"Detect phishing emails using labeled malicious email examples",supervised
+"Detect defective products from labeled inspection images",supervised
+"Detect customer churn risk from labeled cancellation records",supervised
+"Detect disease presence from labeled medical test results",supervised
+"Detect fake reviews using previously labeled review data",supervised
+"Detect late payment risk from labeled invoice history",supervised
+"Detect credit card fraud using labeled transaction data",supervised
+"Detect unsafe driving events from labeled telematics data",supervised
+"Detect employee burnout risk using labeled HR survey records",supervised
+"Identify whether a customer will accept a discount offer",supervised
+"Identify if an insurance claim should be escalated",supervised
+"Identify whether a student needs extra learning support",supervised
+"Identify if a product listing violates marketplace policy",supervised
+"Identify whether a support request needs human assistance",supervised
+"Identify customers likely to upgrade their subscription",supervised
+"Identify transactions that match known fraud patterns",supervised
+"Identify whether a shipment will arrive on time",supervised
+"Identify patients likely to miss appointments",supervised
+"Identify accounts likely to become inactive next month",supervised
+"Score leads by probability of purchase using past outcomes",supervised
+"Score borrowers by likelihood of repaying a loan",supervised
+"Score job candidates using historical hiring decisions",supervised
+"Score customers by cancellation risk using labeled records",supervised
+"Score suppliers by quality risk from past inspection results",supervised
+"Rank sales leads using known conversion outcomes",supervised
+"Rank products by predicted review rating",supervised
+"Rank loan applications by expected default probability",supervised
+"Rank helpdesk tickets by predicted urgency",supervised
+"Rank stores by predicted next quarter performance",supervised
+"Label product reviews with sentiment using trained examples",supervised
+"Label incoming emails with predefined support categories",supervised
+"Label bank customers with risk categories using known outcomes",supervised
+"Label images of damaged packages using labeled examples",supervised
+"Label calls as sales support or complaint using recordings",supervised
+"Determine whether an order will be returned after purchase",supervised
+"Determine if a machine will fail within the next week",supervised
+"Determine whether an applicant qualifies for a scholarship",supervised
+"Determine if a customer is eligible for a premium offer",supervised
+"Determine whether a user session will end in checkout",supervised
+"Use labeled data to classify customer complaints by department",supervised
+"Use historical labels to predict customer buying behavior",supervised
+"Use past examples to classify invoices by payment status",supervised
+"Use known outcomes to forecast service contract renewals",supervised
+"Use labeled sensor records to predict equipment faults",supervised
+"Use training examples to classify crops from satellite images",supervised
+"Use previous approvals to predict mortgage decision results",supervised
+"Use labeled messages to classify user support intent",supervised
+"Use past conversion labels to predict advertising success",supervised
+"Use known fraud labels to flag suspicious accounts",supervised
+"Train a model to predict revenue for each sales region",supervised
+"Train a model to classify customer feedback by sentiment",supervised
+"Train a model to forecast demand for holiday inventory",supervised
+"Train a model to detect malware from labeled file features",supervised
+"Train a model to estimate travel insurance claim cost",supervised
+"Train a model to predict whether users will renew plans",supervised
+"Train a model to classify legal documents by document type",supervised
+"Train a model to detect defective items from inspection data",supervised
+"Train a model to predict taxi trip duration",supervised
+"Train a model to classify support chats into intent labels",supervised
+"Build a classifier for approved versus rejected loan requests",supervised
+"Build a classifier for normal versus abnormal medical reports",supervised
+"Build a classifier for high value and low value customers",supervised
+"Build a predictor for next quarter product demand",supervised
+"Build a predictor for customer purchase probability",supervised
+"Build a forecasting model for branch cash requirements",supervised
+"Build a fraud detection model from labeled payment records",supervised
+"Build a sentiment classifier using labeled social comments",supervised
+"Build a price estimation model from past transaction records",supervised
+"Build a risk prediction model for insurance customers",supervised
 "Cluster customers into segments based on buying behavior",unsupervised
-"Group similar products using only product descriptions",unsupervised
-"Find hidden patterns in website browsing behavior",unsupervised
-"Discover groups of users with similar app usage habits",unsupervised
-"Segment stores based on sales volume location and product mix",unsupervised
-"Group news articles by topic without predefined categories",unsupervised
-"Detect unusual network traffic without labeled attack examples",unsupervised
-"Find natural clusters in survey responses",unsupervised
-"Organize documents into themes automatically",unsupervised
-"Reduce many customer features into a smaller set of useful dimensions",unsupervised
-"Group suppliers based on delivery time quality and cost",unsupervised
-"Find similar songs based on listening patterns",unsupervised
-"Discover market basket patterns from transaction data",unsupervised
-"Cluster patients by symptoms when diagnosis labels are unavailable",unsupervised
-"Identify outlier transactions that look different from normal behavior",unsupervised
+"Cluster website visitors by browsing patterns without labels",unsupervised
+"Cluster stores by sales mix location and footfall",unsupervised
+"Cluster products by description price and customer interest",unsupervised
+"Cluster suppliers based on delivery quality and cost metrics",unsupervised
+"Cluster patients by symptoms when diagnosis labels are missing",unsupervised
+"Cluster users by app engagement and session behavior",unsupervised
+"Cluster bank customers by spending and saving habits",unsupervised
+"Cluster documents by topic without predefined categories",unsupervised
+"Cluster machines by sensor behavior to discover operating modes",unsupervised
+"Cluster restaurants by menu pricing ratings and location",unsupervised
+"Cluster retail branches by customer traffic patterns",unsupervised
+"Cluster songs by listening patterns and audio features",unsupervised
+"Cluster job seekers by skill profile and experience",unsupervised
+"Cluster marketing campaigns by response behavior",unsupervised
+"Cluster insurance policies by usage and claim patterns",unsupervised
+"Cluster delivery zones by order density and travel time",unsupervised
+"Cluster mobile users by feature adoption patterns",unsupervised
+"Cluster products by basket co purchase behavior",unsupervised
+"Cluster call center conversations by hidden themes",unsupervised
+"Group customers into natural segments without target labels",unsupervised
+"Group similar invoices based on amount vendor and timing",unsupervised
+"Group products that are often purchased together",unsupervised
+"Group employees by work patterns and engagement survey responses",unsupervised
+"Group support tickets into themes without manual labels",unsupervised
+"Group social media posts by discussion topic",unsupervised
+"Group financial transactions with similar spending behavior",unsupervised
+"Group hospitals by patient flow and resource usage",unsupervised
+"Group suppliers by reliability patterns without predefined classes",unsupervised
+"Group warehouse items by movement speed and storage needs",unsupervised
+"Group real estate listings by location features and price range",unsupervised
+"Group customer complaints into hidden issue categories",unsupervised
+"Group app screens by user navigation behavior",unsupervised
+"Group loan applicants by financial similarity without decisions",unsupervised
+"Group shoppers by browsing and basket behavior",unsupervised
+"Group factories by production patterns and downtime behavior",unsupervised
+"Group survey answers into common opinion themes",unsupervised
+"Group product reviews into topics without sentiment labels",unsupervised
+"Group delivery routes by distance traffic and package volume",unsupervised
+"Group business clients by usage patterns and contract size",unsupervised
+"Segment customers based on purchase frequency and average order value",unsupervised
+"Segment telecom users using call data and internet usage",unsupervised
+"Segment banking customers based on transaction behavior",unsupervised
+"Segment grocery shoppers using basket contents and visit frequency",unsupervised
+"Segment ecommerce visitors based on clickstream behavior",unsupervised
+"Segment patients using lab results and lifestyle information",unsupervised
+"Segment cities based on mobility and public transport usage",unsupervised
+"Segment stores using revenue assortment and local demographics",unsupervised
+"Segment products based on sales patterns and customer ratings",unsupervised
+"Segment travelers based on booking preferences and trip length",unsupervised
+"Segment donors based on donation timing and amount",unsupervised
+"Segment students based on learning activity and content usage",unsupervised
+"Segment companies by financial ratios and operating style",unsupervised
+"Segment hotel guests by stay behavior and service usage",unsupervised
+"Segment insurance customers without predefined risk labels",unsupervised
+"Segment restaurant customers based on ordering patterns",unsupervised
+"Segment software users by feature usage intensity",unsupervised
+"Segment retail locations by sales and customer mix",unsupervised
+"Segment suppliers using performance metrics without ratings",unsupervised
+"Segment advertisements by audience response similarity",unsupervised
+"Discover hidden patterns in customer purchase histories",unsupervised
+"Discover natural customer groups from unlabeled transaction data",unsupervised
+"Discover themes in thousands of support messages",unsupervised
+"Discover unusual spending patterns without fraud labels",unsupervised
+"Discover groups of products that behave similarly in sales",unsupervised
+"Discover customer personas from browsing and buying data",unsupervised
+"Discover common travel behavior from booking logs",unsupervised
+"Discover patterns in machine sensor data without fault labels",unsupervised
+"Discover similar users from recommendation platform activity",unsupervised
+"Discover store clusters from point of sale data",unsupervised
+"Discover common complaint themes from open text feedback",unsupervised
+"Discover natural groups in employee survey responses",unsupervised
+"Discover product families from usage and rating behavior",unsupervised
+"Discover hidden structure in insurance claim descriptions",unsupervised
+"Discover customer journeys from unlabeled web analytics",unsupervised
+"Discover recurring market basket combinations",unsupervised
+"Discover patterns in hospital treatment pathways",unsupervised
+"Discover audience segments from ad interaction logs",unsupervised
+"Discover groups of vendors using payment timing and cost data",unsupervised
+"Discover anomalies in server behavior without labeled outages",unsupervised
+"Find hidden groups in customer transaction data",unsupervised
+"Find similar products using only product descriptions",unsupervised
+"Find unusual network traffic without known attack labels",unsupervised
+"Find natural clusters in survey response data",unsupervised
+"Find outlier invoices that differ from normal payment behavior",unsupervised
+"Find patterns in shopping baskets without target labels",unsupervised
+"Find similar neighborhoods using housing and lifestyle features",unsupervised
+"Find groups of users with similar streaming behavior",unsupervised
+"Find abnormal machine readings without failure labels",unsupervised
+"Find common topics in customer service chat logs",unsupervised
+"Find duplicate or similar customer records automatically",unsupervised
+"Find patterns in loan applicants without approval labels",unsupervised
+"Find groups of documents related to the same theme",unsupervised
+"Find unusual delivery routes based on time and distance",unsupervised
+"Find customer segments for a new loyalty program",unsupervised
+"Find clusters of products with similar demand curves",unsupervised
+"Find hidden communities in business client interaction data",unsupervised
+"Find groups of orders with similar fulfillment behavior",unsupervised
+"Find common behaviors among users who browse but do not buy",unsupervised
+"Find anomalies in energy meter readings without labeled faults",unsupervised
+"Organize news articles into topics automatically",unsupervised
+"Organize support tickets into issue themes without labels",unsupervised
+"Organize customer feedback into common discussion groups",unsupervised
+"Organize legal documents by similarity without document labels",unsupervised
+"Organize product catalog items into natural collections",unsupervised
+"Organize research papers into topic clusters",unsupervised
+"Organize website pages by visitor behavior similarity",unsupervised
+"Organize resumes into skill based groups without job labels",unsupervised
+"Organize transaction records into behavior based groups",unsupervised
+"Organize store performance profiles into peer groups",unsupervised
+"Reduce many customer features into fewer useful dimensions",unsupervised
+"Reduce survey variables to discover main opinion factors",unsupervised
+"Reduce product feature data for easier visualization",unsupervised
+"Reduce sensor measurements into compact operating patterns",unsupervised
+"Reduce marketing metrics to find main campaign behavior",unsupervised
+"Reduce high dimensional customer data before clustering",unsupervised
+"Reduce image features to visualize product similarity",unsupervised
+"Reduce financial indicators into a small set of hidden factors",unsupervised
+"Reduce website behavior features to discover simple user patterns",unsupervised
+"Reduce patient measurements to reveal major health profiles",unsupervised
+"Detect unusual transactions without labeled fraud examples",unsupervised
+"Detect outlier customers with behavior unlike the majority",unsupervised
+"Detect abnormal server logs when outage labels are unavailable",unsupervised
+"Detect rare purchase patterns in retail basket data",unsupervised
+"Detect unusual supplier performance without prior risk labels",unsupervised
+"Detect strange insurance claims without confirmed fraud labels",unsupervised
+"Detect abnormal energy usage without known fault examples",unsupervised
+"Detect unusual employee access behavior without security labels",unsupervised
+"Detect uncommon customer journeys in web analytics",unsupervised
+"Detect rare manufacturing patterns before defects are labeled",unsupervised
+"Identify natural customer groups from unlabeled purchase data",unsupervised
+"Identify hidden market segments without predefined categories",unsupervised
+"Identify groups of products with similar sales behavior",unsupervised
+"Identify common topics in complaint text without labels",unsupervised
+"Identify unusual app sessions without known problem examples",unsupervised
+"Identify outlier shipments using delivery time and route data",unsupervised
+"Identify similar stores for benchmarking without performance labels",unsupervised
+"Identify patterns in customer feedback without sentiment labels",unsupervised
+"Identify groups of claims with similar descriptions",unsupervised
+"Identify hidden communities in customer referral networks",unsupervised
+"Analyze unlabeled purchase data to find customer segments",unsupervised
+"Analyze browsing logs to discover visitor behavior groups",unsupervised
+"Analyze service records to reveal common issue clusters",unsupervised
+"Analyze unlabeled sensor data to find operating states",unsupervised
+"Analyze transaction histories to uncover spending patterns",unsupervised
+"Analyze user activity to discover natural engagement groups",unsupervised
+"Analyze product usage data to find hidden feature patterns",unsupervised
+"Analyze delivery data to find route behavior groups",unsupervised
+"Analyze store data to discover peer groups without labels",unsupervised
+"Analyze customer feedback to find recurring topics",unsupervised
+"Use clustering to segment customers for personalized offers",unsupervised
+"Use clustering to group products with similar sales trends",unsupervised
+"Use clustering to organize support tickets without manual tags",unsupervised
+"Use clustering to find groups of similar insurance claims",unsupervised
+"Use clustering to discover customer personas from behavior data",unsupervised
+"Use grouping methods to create market segments without labels",unsupervised
+"Use grouping methods to organize articles by topic",unsupervised
+"Use grouping methods to compare stores with similar patterns",unsupervised
+"Use grouping methods to find similar suppliers automatically",unsupervised
+"Use grouping methods to discover natural user communities",unsupervised
+"Build a segmentation model for customers without target labels",unsupervised
+"Build a clustering model for product recommendation discovery",unsupervised
+"Build an anomaly detection model without confirmed failure labels",unsupervised
+"Build a topic discovery model for customer comments",unsupervised
+"Build a similarity model for grouping documents",unsupervised
+"Build a model to find hidden patterns in transaction data",unsupervised
+"Build a model to group patients using unlabeled health records",unsupervised
+"Build a model to detect outlier behavior in login logs",unsupervised
+"Build a model to organize products into natural categories",unsupervised
+"Build a model to discover customer segments from raw behavior",unsupervised
+"Explore unlabeled sales data to find store clusters",unsupervised
+"Explore customer activity logs to reveal hidden behavior groups",unsupervised
+"Explore product review text to discover common themes",unsupervised
+"Explore banking transaction data to find spending segments",unsupervised
+"Explore warehouse movement records to group inventory types",unsupervised
+"Explore app usage data to discover natural user segments",unsupervised
+"Explore survey data to find opinion clusters",unsupervised
+"Explore route data to discover delivery pattern groups",unsupervised
+"Explore manufacturing data to find unusual operating states",unsupervised
+"Explore CRM data to identify hidden client segments",unsupervised
 "Train an agent to choose prices that maximize long term profit",reinforcement
-"Build a robot agent that learns to navigate a warehouse using rewards",reinforcement
+"Train an agent to adjust discounts based on customer response rewards",reinforcement
+"Train an agent to manage inventory ordering decisions",reinforcement
+"Train an agent to select ads that maximize click rewards",reinforcement
+"Train an agent to schedule deliveries with minimum delay rewards",reinforcement
+"Train an agent to route support tickets for faster resolution rewards",reinforcement
+"Train an agent to control warehouse robots using reward signals",reinforcement
+"Train an agent to recommend products based on feedback rewards",reinforcement
+"Train an agent to allocate marketing budget over time",reinforcement
+"Train an agent to reduce energy usage with savings rewards",reinforcement
+"Train an agent to choose loan collection actions with outcome rewards",reinforcement
+"Train an agent to decide when to restock each product",reinforcement
+"Train an agent to optimize checkout queue staffing decisions",reinforcement
+"Train an agent to control traffic lights using delay rewards",reinforcement
+"Train an agent to personalize app notifications using engagement rewards",reinforcement
+"Train an agent to bid for online ads using conversion rewards",reinforcement
+"Train an agent to choose insurance renewal offers",reinforcement
+"Train an agent to manage cloud computing resources efficiently",reinforcement
+"Train an agent to guide a robot through a warehouse",reinforcement
+"Train an agent to choose next best action in sales outreach",reinforcement
+"Build a robot agent that learns warehouse navigation from rewards",reinforcement
+"Build a pricing agent that learns from revenue reward feedback",reinforcement
+"Build a recommendation agent that adapts to user clicks over time",reinforcement
+"Build a trading agent that learns buy sell or hold actions",reinforcement
+"Build a scheduling agent that reduces machine idle time",reinforcement
+"Build a chatbot agent that improves answers using reward signals",reinforcement
+"Build an agent to optimize delivery routes through trial and error",reinforcement
+"Build an agent to manage advertising bids in real time",reinforcement
+"Build an agent to control heating and cooling for energy rewards",reinforcement
+"Build an agent to assign drivers based on service reward feedback",reinforcement
+"Build an agent to select fraud review actions with investigation rewards",reinforcement
+"Build an agent to decide product display order for higher conversions",reinforcement
+"Build an agent to optimize loan repayment reminder timing",reinforcement
+"Build an agent to manage ride sharing surge pricing",reinforcement
+"Build an agent to automate game difficulty using player response rewards",reinforcement
+"Build an agent to choose warehouse picking paths",reinforcement
+"Build an agent to rebalance stock across retail branches",reinforcement
+"Build an agent to automate portfolio allocation with risk rewards",reinforcement
+"Build an agent to choose learning content for students",reinforcement
+"Build an agent to optimize call center routing decisions",reinforcement
+"Use reward signals to teach a drone safe delivery routes",reinforcement
+"Use reward signals to improve robot picking actions",reinforcement
+"Use reward signals to optimize traffic signal timing",reinforcement
+"Use reward signals to personalize streaming recommendations",reinforcement
+"Use reward signals to choose best marketing action sequences",reinforcement
+"Use reward signals to learn dynamic pricing decisions",reinforcement
+"Use reward signals to manage elevator movement in a building",reinforcement
+"Use reward signals to train a game AI opponent",reinforcement
+"Use reward signals to improve order batching decisions",reinforcement
+"Use reward signals to teach a chatbot escalation policy",reinforcement
+"Use rewards to help a system learn inventory restocking actions",reinforcement
+"Use rewards to train a warehouse robot to avoid obstacles",reinforcement
+"Use rewards to optimize ad placement decisions over time",reinforcement
+"Use rewards to teach an autonomous vehicle lane changing policy",reinforcement
+"Use rewards to improve customer retention offer timing",reinforcement
+"Use rewards to learn the best sequence of email campaign actions",reinforcement
+"Use rewards to optimize food delivery assignment decisions",reinforcement
+"Use rewards to teach a robotic arm to sort packages",reinforcement
+"Use rewards to improve online tutoring question selection",reinforcement
+"Use rewards to train a system to balance energy storage",reinforcement
+"Optimize ad bidding where an agent learns from clicks and conversions",reinforcement
+"Optimize product recommendations through ongoing user feedback rewards",reinforcement
+"Optimize ride dispatch decisions using driver and rider rewards",reinforcement
+"Optimize warehouse robot movement using trial and error",reinforcement
+"Optimize discount timing with rewards from customer purchases",reinforcement
+"Optimize traffic light control with waiting time penalties",reinforcement
+"Optimize cloud server allocation with cost and speed rewards",reinforcement
+"Optimize inventory replenishment through action reward learning",reinforcement
+"Optimize portfolio trading actions based on return and risk rewards",reinforcement
+"Optimize delivery route choices using fuel and time rewards",reinforcement
+"Optimize dynamic pricing for hotel rooms using booking rewards",reinforcement
+"Optimize production scheduling with rewards for lower downtime",reinforcement
+"Optimize push notification timing with engagement rewards",reinforcement
+"Optimize customer service routing with satisfaction rewards",reinforcement
+"Optimize game strategy by learning from win loss rewards",reinforcement
+"Optimize procurement decisions with cost and reliability rewards",reinforcement
+"Optimize email campaign sequence using conversion rewards",reinforcement
+"Optimize robot navigation with collision penalties and goal rewards",reinforcement
+"Optimize power grid battery charging using savings rewards",reinforcement
+"Optimize autonomous taxi dispatch with revenue and wait time rewards",reinforcement
 "Teach a game AI to win by receiving rewards for good moves",reinforcement
-"Optimize ad bidding where an agent learns from clicks and rewards",reinforcement
-"Create a recommendation agent that learns from user feedback over time",reinforcement
-"Control traffic lights using rewards for reducing waiting time",reinforcement
-"Train a delivery drone to choose routes and avoid obstacles",reinforcement
+"Teach a delivery drone to avoid obstacles and reach destinations",reinforcement
+"Teach a chatbot to select responses based on user satisfaction rewards",reinforcement
+"Teach an autonomous vehicle agent to drive safely",reinforcement
+"Teach a pricing system to balance profit and customer demand",reinforcement
+"Teach a robot arm to pack items using reward feedback",reinforcement
+"Teach a system to choose next best sales actions",reinforcement
+"Teach a recommendation engine to adapt after every user interaction",reinforcement
+"Teach a scheduling system to reduce waiting time through rewards",reinforcement
+"Teach a trading system to manage buy sell hold decisions",reinforcement
+"Teach an elevator controller to reduce passenger waiting time",reinforcement
+"Teach a warehouse robot to pick efficient paths",reinforcement
+"Teach a learning platform to choose lessons for each student",reinforcement
+"Teach a service bot when to escalate conversations",reinforcement
+"Teach a drone fleet to coordinate package delivery actions",reinforcement
+"Teach an energy system to control battery charge decisions",reinforcement
+"Teach a marketing system to select campaign steps",reinforcement
+"Teach a traffic controller to adapt to congestion rewards",reinforcement
+"Teach a manufacturing controller to adjust machine settings",reinforcement
+"Teach a fraud review system to choose investigation actions",reinforcement
 "Develop an agent that learns inventory ordering decisions",reinforcement
-"Let a chatbot learn conversation strategies from reward signals",reinforcement
-"Optimize energy usage with an agent that receives rewards for savings",reinforcement
-"Train a trading agent to buy sell or hold based on market rewards",reinforcement
-"Teach an autonomous vehicle agent to stay safe and reach destinations",reinforcement
-"Use rewards to help a system learn the best sequence of marketing actions",reinforcement
-"Train a scheduling agent to assign jobs and reduce machine idle time",reinforcement
-"Build a learning agent that adapts game difficulty based on player responses",reinforcement
+"Develop an agent that learns customer retention actions",reinforcement
+"Develop an agent that learns route planning from delivery rewards",reinforcement
+"Develop an agent that learns to allocate support agents to queues",reinforcement
+"Develop an agent that learns pricing decisions through experiments",reinforcement
+"Develop an agent that learns when to send reminders",reinforcement
+"Develop an agent that learns ad selection from click rewards",reinforcement
+"Develop an agent that learns automated negotiation strategies",reinforcement
+"Develop an agent that learns machine control settings",reinforcement
+"Develop an agent that learns warehouse picking order",reinforcement
+"Develop an agent that learns portfolio allocation actions",reinforcement
+"Develop an agent that learns customer onboarding steps",reinforcement
+"Develop an agent that learns call routing policies",reinforcement
+"Develop an agent that learns robot movement policies",reinforcement
+"Develop an agent that learns energy saving control actions",reinforcement
+"Develop an agent that learns promotion timing policies",reinforcement
+"Develop an agent that learns vehicle dispatch actions",reinforcement
+"Develop an agent that learns app personalization actions",reinforcement
+"Develop an agent that learns tutoring hint selection",reinforcement
+"Develop an agent that learns supply chain ordering actions",reinforcement
+"Create a recommendation agent that learns from user feedback over time",reinforcement
+"Create a bidding agent that learns from advertising reward feedback",reinforcement
+"Create a warehouse agent that learns to move items efficiently",reinforcement
+"Create a pricing agent that explores different price actions",reinforcement
+"Create a customer service agent that learns escalation timing",reinforcement
+"Create a logistics agent that learns route choices from delivery rewards",reinforcement
+"Create a robot agent that learns from success and failure rewards",reinforcement
+"Create a campaign agent that learns the best sequence of offers",reinforcement
+"Create an energy control agent that learns from cost savings",reinforcement
+"Create an inventory agent that learns restocking policies",reinforcement
+"Create a trading agent that learns from market reward outcomes",reinforcement
+"Create a gaming agent that learns strategy from scores",reinforcement
+"Create a traffic signal agent that learns from congestion penalties",reinforcement
+"Create a tutoring agent that learns from student progress rewards",reinforcement
+"Create a delivery assignment agent that learns from wait time rewards",reinforcement
+"Create a robot navigation agent that learns from path rewards",reinforcement
+"Create a smart thermostat agent that learns comfort and cost tradeoffs",reinforcement
+"Create a ride matching agent that learns from completed trip rewards",reinforcement
+"Create a retention agent that learns which offers reduce churn",reinforcement
+"Create a procurement agent that learns supplier choice policies",reinforcement
+"Control traffic lights using rewards for reducing waiting time",reinforcement
+"Control warehouse robots using rewards for fast safe movement",reinforcement
+"Control store inventory decisions using profit and stockout rewards",reinforcement
+"Control building temperature with comfort and energy rewards",reinforcement
+"Control robot arm movements using success reward feedback",reinforcement
+"Control online ad budgets using click and conversion rewards",reinforcement
+"Control delivery vehicle dispatch based on service rewards",reinforcement
+"Control manufacturing machine settings with quality rewards",reinforcement
+"Control game characters using score based rewards",reinforcement
+"Control battery storage using electricity price rewards",reinforcement
+"Manage dynamic pricing with an agent and purchase rewards",reinforcement
+"Manage ride sharing drivers using an agent and trip rewards",reinforcement
+"Manage customer retention actions with long term reward signals",reinforcement
+"Manage supply chain decisions through an agent learning rewards",reinforcement
+"Manage marketing campaign steps using trial and reward feedback",reinforcement
+"Manage cloud resources with an agent optimizing cost rewards",reinforcement
+"Manage fraud investigation actions using reward based learning",reinforcement
+"Manage call center staffing policies through feedback rewards",reinforcement
+"Manage loan reminder strategies with an action reward system",reinforcement
+"Manage autonomous delivery robots using reward based policies",reinforcement
+"Learn the best action sequence for onboarding new customers",reinforcement
+"Learn the best policy for sending promotional notifications",reinforcement
+"Learn how an agent should rebalance inventory among stores",reinforcement
+"Learn how an agent should control robot navigation",reinforcement
+"Learn a policy for assigning support requests to teams",reinforcement
+"Learn a policy for setting real time delivery prices",reinforcement
+"Learn a policy for automated stock trading decisions",reinforcement
+"Learn a policy for choosing product recommendations after feedback",reinforcement
+"Learn a policy for scheduling factory jobs with fewer delays",reinforcement
+"Learn a policy for optimizing ad budget allocation",reinforcement
+"Predict vendor risk score from past delivery and quality outcomes",supervised
+"Predict online order fraud using labeled checkout behavior",supervised
+"Classify training feedback into positive neutral and negative categories",supervised
+"Classify warranty requests as approved rejected or review needed",supervised
+"Forecast weekly subscription cancellations from historical customer data",supervised
+"Train an agent to choose restaurant table assignments using wait time rewards",reinforcement
+"Build an agent to optimize courier pickup order through reward feedback",reinforcement
+"Use rewards to teach a store layout agent where to place products",reinforcement
+"Optimize airport gate assignment using an agent and delay rewards",reinforcement
+"Teach an agent to choose cybersecurity response actions from rewards",reinforcement
+"Develop an agent that learns refund offer decisions from satisfaction rewards",reinforcement
+"Create an agent that learns personalized coupon timing policies",reinforcement
+"Control a fleet charging agent using battery cost reward signals",reinforcement
+"Manage spare parts ordering with an agent learning stockout rewards",reinforcement
+"Learn a policy for choosing next best actions in customer support",reinforcement
