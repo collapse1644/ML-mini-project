@@ -1,10 +1,4 @@
-"""Beginner-friendly ML paradigm classifier.
-
-This file trains a small text classifier that identifies whether a business
-problem sounds like Supervised Learning, Unsupervised Learning, or
-Reinforcement Learning.
-
-The project intentionally keeps the steps simple:
+"""
 1. Load a CSV dataset.
 2. Clean the text.
 3. Convert text into TF-IDF features.
