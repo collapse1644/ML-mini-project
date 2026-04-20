@@ -100,6 +100,25 @@ That runs the file like a normal Python script and Streamlit will show
 - In VS Code, open **Run and Debug** and choose **Run Streamlit App**
 - On Windows, double-click `run_app.bat`
 
+## Deploy On Streamlit Cloud
+
+When deploying, make sure these files are pushed to GitHub:
+
+- `app.py`
+- `ml_paradigm_classifier.py`
+- `requirements.txt`
+- `data/ml_paradigm_dataset.csv`
+
+In Streamlit Cloud:
+
+1. Choose your GitHub repository.
+2. Set the main file path to `app.py`.
+3. Deploy the app.
+
+If `data/ml_paradigm_dataset.csv` is missing from GitHub, the app will still
+run by using the built-in fallback dataset, but pushing the CSV is better
+because it keeps the dataset easy to expand.
+
 ## Expanding The Dataset
 
 To improve the project, add more examples to `data/ml_paradigm_dataset.csv`.

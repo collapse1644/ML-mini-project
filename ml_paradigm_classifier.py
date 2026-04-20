@@ -14,6 +14,7 @@ The project intentionally keeps the steps simple:
 
 from __future__ import annotations
 
+from io import StringIO
 import string
 from dataclasses import dataclass
 from pathlib import Path
@@ -29,6 +30,55 @@ from sklearn.pipeline import Pipeline
 
 DATA_PATH = Path(__file__).resolve().parent / "data" / "ml_paradigm_dataset.csv"
 RANDOM_STATE = 42
+
+
+FALLBACK_DATA_CSV = """text,label
+"Predict customer churn using previous purchase and support history",supervised
+"Classify emails as spam or not spam",supervised
+"Forecast monthly sales from historical revenue data",supervised
+"Estimate house prices from size location and number of rooms",supervised
+"Predict whether a loan applicant will default",supervised
+"Classify product reviews as positive neutral or negative",supervised
+"Detect fraudulent credit card transactions using labeled examples",supervised
+"Predict delivery time from distance traffic and weather data",supervised
+"Classify medical images as healthy or diseased",supervised
+"Estimate employee attrition from HR records",supervised
+"Predict demand for a new product based on past orders",supervised
+"Classify support tickets into billing technical or account categories",supervised
+"Predict insurance claim amount from customer profile data",supervised
+"Identify whether a customer will click an advertisement",supervised
+"Forecast machine failure using sensor readings and past labels",supervised
+"Cluster customers into segments based on buying behavior",unsupervised
+"Group similar products using only product descriptions",unsupervised
+"Find hidden patterns in website browsing behavior",unsupervised
+"Discover groups of users with similar app usage habits",unsupervised
+"Segment stores based on sales volume location and product mix",unsupervised
+"Group news articles by topic without predefined categories",unsupervised
+"Detect unusual network traffic without labeled attack examples",unsupervised
+"Find natural clusters in survey responses",unsupervised
+"Organize documents into themes automatically",unsupervised
+"Reduce many customer features into a smaller set of useful dimensions",unsupervised
+"Group suppliers based on delivery time quality and cost",unsupervised
+"Find similar songs based on listening patterns",unsupervised
+"Discover market basket patterns from transaction data",unsupervised
+"Cluster patients by symptoms when diagnosis labels are unavailable",unsupervised
+"Identify outlier transactions that look different from normal behavior",unsupervised
+"Train an agent to choose prices that maximize long term profit",reinforcement
+"Build a robot agent that learns to navigate a warehouse using rewards",reinforcement
+"Teach a game AI to win by receiving rewards for good moves",reinforcement
+"Optimize ad bidding where an agent learns from clicks and rewards",reinforcement
+"Create a recommendation agent that learns from user feedback over time",reinforcement
+"Control traffic lights using rewards for reducing waiting time",reinforcement
+"Train a delivery drone to choose routes and avoid obstacles",reinforcement
+"Develop an agent that learns inventory ordering decisions",reinforcement
+"Let a chatbot learn conversation strategies from reward signals",reinforcement
+"Optimize energy usage with an agent that receives rewards for savings",reinforcement
+"Train a trading agent to buy sell or hold based on market rewards",reinforcement
+"Teach an autonomous vehicle agent to stay safe and reach destinations",reinforcement
+"Use rewards to help a system learn the best sequence of marketing actions",reinforcement
+"Train a scheduling agent to assign jobs and reduce machine idle time",reinforcement
+"Build a learning agent that adapts game difficulty based on player responses",reinforcement
+"""
 
 
 KEYWORD_RULES: Dict[str, List[str]] = {
@@ -112,9 +162,19 @@ def clean_text(text: str) -> str:
 
 
 def load_dataset(csv_path: Path = DATA_PATH) -> pd.DataFrame:
-    """Load the CSV dataset and check that the required columns exist."""
+    """Load the CSV dataset and check that the required columns exist.
 
-    data = pd.read_csv(csv_path)
+    The CSV file is preferred because it is easy to expand. The fallback keeps
+    the Streamlit Cloud demo working even if the data folder is not deployed.
+    """
+
+    csv_path = Path(csv_path)
+
+    if csv_path.exists():
+        data = pd.read_csv(csv_path)
+    else:
+        data = pd.read_csv(StringIO(FALLBACK_DATA_CSV))
+
     required_columns = {"text", "label"}
 
     if not required_columns.issubset(data.columns):

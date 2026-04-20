@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-from ml_paradigm_classifier import predict_ml_type, train_model
+from ml_paradigm_classifier import DATA_PATH, predict_ml_type, train_model
 
 
 @st.cache_resource
@@ -32,6 +32,13 @@ if st.button("Classify"):
     if not user_text.strip():
         st.warning("Please enter a business problem description.")
     else:
+        if not DATA_PATH.exists():
+            st.warning(
+                "The CSV dataset file was not found in this deployment, so "
+                "the app is using the built-in sample dataset. To use the CSV, "
+                "make sure data/ml_paradigm_dataset.csv is pushed to GitHub."
+            )
+
         model = get_model()
         result = predict_ml_type(model, user_text)
 
